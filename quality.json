@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "theme": "Storyboard Frames",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "status": "HOLD",
   "score": 77,
   "requiredScore": 95,
@@ -10,5 +10,9 @@
   "accepted": false,
   "directoryApprovalClaimed": false,
   "majorDefects": [],
-  "note": "This records the source review. New repository documentation has not been rescored."
+  "note": "The score records source version 1.0.0. Heading counters were removed to prevent incorrect numbers in long notes. Current files have not received a new independent quality review. The 95/100 acceptance gate remains unmet.",
+  "historicalReviewVersion": "1.0.0",
+  "historicalScore": 77,
+  "currentArtifactsIndependentlyReviewed": false,
+  "automaticHeadingNumbers": false
 }

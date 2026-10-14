@@ -146,7 +146,7 @@
 .markdown-source-view.mod-cm6 .cm-sizer { max-width: var(--file-line-width); margin-inline: auto; }
 .markdown-rendered p { margin-block: 0 0.62em; }
 
-/* ---------- headings as numbered story frames ---------- */
+/* ---------- headings as ruled story frames ---------- */
 .markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
 .markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6 {
   font-family: var(--font-interface-theme);
@@ -155,19 +155,9 @@
   margin-block: 1.2em 0.4em;
 }
 .markdown-rendered h1 { border-bottom: 3px solid var(--frame-accent); padding-bottom: 0.2em; }
-.markdown-preview-view { counter-reset: frame-no; }
 .markdown-rendered h2 {
-  counter-increment: frame-no;
   border-top: 2px solid var(--frame-line);
   padding-top: 0.42em;
-}
-.markdown-rendered h2::before {
-  content: "FRAME " counter(frame-no, decimal-leading-zero) " · ";
-  font-family: var(--font-monospace-theme);
-  font-size: 0.68em;
-  letter-spacing: 0.14em;
-  color: var(--frame-accent);
-  vertical-align: 0.16em;
 }
 
 /* ---------- shot cards: blockquotes and callouts ---------- */
@@ -208,12 +198,10 @@ a.internal-link:hover { color: var(--link-color-hover); }
 a.external-link { color: var(--link-external-color); }
 .is-unresolved, a.is-unresolved { color: var(--link-unresolved-color); text-decoration-style: dashed; }
 
-/* ---------- shot lists: leading-zero numbering ---------- */
-.markdown-rendered ol { list-style: none; counter-reset: shot-line; padding-inline-start: 2.1em; }
-.markdown-rendered ol > li { counter-increment: shot-line; position: relative; margin-block: 0.16em; }
-.markdown-rendered ol > li::before {
-  content: counter(shot-line, decimal-leading-zero);
-  position: absolute; inset-inline-start: -2.1em;
+/* ---------- shot lists: native markers preserve authored start values ---------- */
+.markdown-rendered ol { list-style-type: decimal-leading-zero; padding-inline-start: 2.1em; }
+.markdown-rendered ol > li { margin-block: 0.16em; }
+.markdown-rendered ol > li::marker {
   font-family: var(--font-monospace-theme);
   font-variant-numeric: tabular-nums;
   color: var(--frame-accent);
