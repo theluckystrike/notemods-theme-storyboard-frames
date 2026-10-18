@@ -82,8 +82,8 @@
   --tag-background: #e6dfd1; --tag-color: #4a4331;
   --tag-background-hover: #dbd1bd;
   --code-normal: #26221b;
-  --code-comment: #625943; --code-keyword: #a83b12; --code-string: #3f6b2a;
-  --code-function: #6b3a7a; --code-value: #704714; --code-tag: #a03418;
+    
+    
   --tab-text-color: #5a503c; --tab-text-color-active: #211d18;
   --tab-text-color-focused: #211d18; --tab-text-color-focused-active: #211d18;
   --tab-background-active: #f3efe6;
@@ -126,8 +126,8 @@
   --tag-background: #34302a; --tag-color: #d7d0c0;
   --tag-background-hover: #3d3830;
   --code-normal: #e4dfd3;
-  --code-comment: #b1a48a; --code-keyword: #ff8f66; --code-string: #a7d08a;
-  --code-function: #d3a7e0; --code-value: #e8c48a; --code-tag: #f0a08a;
+    
+    
   --tab-text-color: #b0a893; --tab-text-color-active: #eee9df;
   --tab-text-color-focused: #eee9df; --tab-text-color-focused-active: #f5f2eb;
   --tab-background-active: #24211d;
@@ -421,14 +421,14 @@ body .checkbox-container { transition-property: background-color, transform; }
 
 /* Current editor variables need explicit syntax colors and frame surfaces. */
 .theme-light {
-  --code-property: #14507a;
-  --code-punctuation: #625943;
-  --code-operator: #57503f;
+  
+  
+  
 }
 .theme-dark {
-  --code-property: #7cc4f0;
-  --code-punctuation: #b1a48a;
-  --code-operator: #b0a893;
+  
+  
+  
 }
 .theme-light, .theme-dark {
   --blockquote-background-color: var(--frame-card);
@@ -521,59 +521,6 @@ body .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper { overflow: v
     scroll-behavior: auto;
   }
 }
-body.theme-light .callout[data-callout="note"] { --callout-color: 45, 100, 137; }
-body.theme-light .callout[data-callout="info"] { --callout-color: 45, 100, 137; }
-body.theme-light .callout[data-callout="abstract"] { --callout-color: 128, 80, 38; }
-body.theme-light .callout[data-callout="summary"] { --callout-color: 128, 80, 38; }
-body.theme-light .callout[data-callout="tldr"] { --callout-color: 128, 80, 38; }
-body.theme-light .callout[data-callout="todo"] { --callout-color: 42, 105, 118; }
-body.theme-light .callout[data-callout="tip"] { --callout-color: 59, 112, 89; }
-body.theme-light .callout[data-callout="hint"] { --callout-color: 59, 112, 89; }
-body.theme-light .callout[data-callout="success"] { --callout-color: 69, 106, 48; }
-body.theme-light .callout[data-callout="check"] { --callout-color: 69, 106, 48; }
-body.theme-light .callout[data-callout="done"] { --callout-color: 69, 106, 48; }
-body.theme-light .callout[data-callout="question"] { --callout-color: 112, 83, 135; }
-body.theme-light .callout[data-callout="help"] { --callout-color: 112, 83, 135; }
-body.theme-light .callout[data-callout="faq"] { --callout-color: 112, 83, 135; }
-body.theme-light .callout[data-callout="warning"] { --callout-color: 128, 91, 28; }
-body.theme-light .callout[data-callout="caution"] { --callout-color: 128, 91, 28; }
-body.theme-light .callout[data-callout="attention"] { --callout-color: 128, 91, 28; }
-body.theme-light .callout[data-callout="failure"] { --callout-color: 156, 69, 49; }
-body.theme-light .callout[data-callout="fail"] { --callout-color: 156, 69, 49; }
-body.theme-light .callout[data-callout="missing"] { --callout-color: 156, 69, 49; }
-body.theme-light .callout[data-callout="danger"] { --callout-color: 160, 57, 63; }
-body.theme-light .callout[data-callout="error"] { --callout-color: 160, 57, 63; }
-body.theme-light .callout[data-callout="bug"] { --callout-color: 134, 61, 102; }
-body.theme-light .callout[data-callout="example"] { --callout-color: 82, 100, 120; }
-body.theme-light .callout[data-callout="quote"] { --callout-color: 90, 99, 114; }
-body.theme-light .callout[data-callout="cite"] { --callout-color: 90, 99, 114; }
-body.theme-dark .callout[data-callout="note"] { --callout-color: 120, 177, 218; }
-body.theme-dark .callout[data-callout="info"] { --callout-color: 120, 177, 218; }
-body.theme-dark .callout[data-callout="abstract"] { --callout-color: 225, 164, 101; }
-body.theme-dark .callout[data-callout="summary"] { --callout-color: 225, 164, 101; }
-body.theme-dark .callout[data-callout="tldr"] { --callout-color: 225, 164, 101; }
-body.theme-dark .callout[data-callout="todo"] { --callout-color: 119, 189, 203; }
-body.theme-dark .callout[data-callout="tip"] { --callout-color: 140, 195, 170; }
-body.theme-dark .callout[data-callout="hint"] { --callout-color: 140, 195, 170; }
-body.theme-dark .callout[data-callout="success"] { --callout-color: 180, 206, 145; }
-body.theme-dark .callout[data-callout="check"] { --callout-color: 180, 206, 145; }
-body.theme-dark .callout[data-callout="done"] { --callout-color: 180, 206, 145; }
-body.theme-dark .callout[data-callout="question"] { --callout-color: 181, 163, 210; }
-body.theme-dark .callout[data-callout="help"] { --callout-color: 181, 163, 210; }
-body.theme-dark .callout[data-callout="faq"] { --callout-color: 181, 163, 210; }
-body.theme-dark .callout[data-callout="warning"] { --callout-color: 225, 182, 108; }
-body.theme-dark .callout[data-callout="caution"] { --callout-color: 225, 182, 108; }
-body.theme-dark .callout[data-callout="attention"] { --callout-color: 225, 182, 108; }
-body.theme-dark .callout[data-callout="failure"] { --callout-color: 239, 154, 135; }
-body.theme-dark .callout[data-callout="fail"] { --callout-color: 239, 154, 135; }
-body.theme-dark .callout[data-callout="missing"] { --callout-color: 239, 154, 135; }
-body.theme-dark .callout[data-callout="danger"] { --callout-color: 242, 155, 156; }
-body.theme-dark .callout[data-callout="error"] { --callout-color: 242, 155, 156; }
-body.theme-dark .callout[data-callout="bug"] { --callout-color: 222, 160, 191; }
-body.theme-dark .callout[data-callout="example"] { --callout-color: 159, 180, 204; }
-body.theme-dark .callout[data-callout="quote"] { --callout-color: 177, 183, 193; }
-body.theme-dark .callout[data-callout="cite"] { --callout-color: 177, 183, 193; }
-
 /* Bounded accents retain legible label tokens below native body classes. */
 body.theme-light { --frame-on-accent: #f3efe6; }
 body.theme-dark { --frame-on-accent: #2a1105; }
@@ -608,12 +555,6 @@ body .setting-group .setting-item:focus-visible { box-shadow: none; outline: 2px
 body .search-result-file-matches { border: 0; box-shadow: none; }
 body .search-result-file-match { border-color: transparent; }
 body .callout .callout-title { background: rgba(var(--callout-color),0.10); }
-body.theme-light .callout[data-callout="note"] { --callout-color: 70,85,112; }
-body.theme-light .callout[data-callout="info"] { --callout-color: 25,101,141; }
-body.theme-light .callout[data-callout="todo"] { --callout-color: 30,110,100; }
-body.theme-dark .callout[data-callout="note"] { --callout-color: 161,176,199; }
-body.theme-dark .callout[data-callout="info"] { --callout-color: 117,185,225; }
-body.theme-dark .callout[data-callout="todo"] { --callout-color: 116,205,182; }
 body .prompt .prompt-input-container { border: 0; box-shadow: none; }
 body .prompt .prompt-input { border: 0; border-radius: 0; background: transparent; }
 body .prompt .prompt-input:focus-visible { outline: none; box-shadow: inset 0 -2px 0 var(--frame-accent); }
@@ -637,9 +578,6 @@ body .callout[data-callout="scene"] :is(.callout-icon,.callout-icon .svg-icon) {
 /* Keep the rendered editor table as wide as the text column. */
 body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget,
 body .markdown-source-view.mod-cm6 .cm-table-widget .table-editor { width: 100%; max-width: 100%; }
-body.theme-light .callout[data-callout="tip"] { --callout-color: 20, 100, 130; }
-body.theme-light .callout[data-callout="success"] { --callout-color: 70, 100, 35; }
-body.theme-dark .callout[data-callout="tip"] { --callout-color: 110, 185, 218; }
 body .markdown-source-view.mod-cm6 .cm-focused .cm-active { box-shadow: -3px 0 0 var(--frame-accent); }
 body .markdown-source-view.mod-cm6 .cm-content { caret-color: var(--caret-color); }
 body .search-result-file-matched-text { font-weight: 700; text-decoration-line: underline; }
@@ -662,7 +600,7 @@ body .markdown-source-view.mod-cm6 .cm-table-widget table { width: 100%; }
 /* The native cursor layer is outside the generic editor class in current Obsidian. */
 @media (prefers-reduced-motion: reduce) {
   body .markdown-source-view.mod-cm6 .cm-scroller .cm-layer.cm-cursorLayer {
-    animation-name: none; animation-duration: 0s; animation-iteration-count: 1;
+    animation-duration: 0s; animation-iteration-count: 1;
   }
 }
 
@@ -684,3 +622,107 @@ body .extra-setting-button:focus { outline: 2px solid var(--background-modifier-
 
 /* Native drag-handle padding extends outside the text column. */
 body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget { max-width: none; }
+
+/* Semantic colours have one mode-specific source. */
+body.theme-light .callout[data-callout="note"] { --callout-color: 70, 85, 112; }
+body.theme-light .callout[data-callout="abstract"],
+body.theme-light .callout[data-callout="summary"],
+body.theme-light .callout[data-callout="tldr"] { --callout-color: 128, 80, 38; }
+body.theme-light .callout[data-callout="info"] { --callout-color: 60, 80, 150; }
+body.theme-light .callout[data-callout="todo"] { --callout-color: 30, 110, 100; }
+body.theme-light .callout[data-callout="tip"],
+body.theme-light .callout[data-callout="hint"] { --callout-color: 20, 100, 130; }
+body.theme-light .callout[data-callout="success"],
+body.theme-light .callout[data-callout="check"],
+body.theme-light .callout[data-callout="done"] { --callout-color: 70, 100, 35; }
+body.theme-light .callout[data-callout="question"],
+body.theme-light .callout[data-callout="help"],
+body.theme-light .callout[data-callout="faq"] { --callout-color: 112, 83, 135; }
+body.theme-light .callout[data-callout="warning"],
+body.theme-light .callout[data-callout="caution"],
+body.theme-light .callout[data-callout="attention"] { --callout-color: 128, 91, 28; }
+body.theme-light .callout[data-callout="failure"],
+body.theme-light .callout[data-callout="fail"],
+body.theme-light .callout[data-callout="missing"] { --callout-color: 156, 69, 49; }
+body.theme-light .callout[data-callout="danger"],
+body.theme-light .callout[data-callout="error"] { --callout-color: 160, 57, 63; }
+body.theme-light .callout[data-callout="bug"] { --callout-color: 134, 61, 102; }
+body.theme-light .callout[data-callout="example"] { --callout-color: 82, 100, 120; }
+body.theme-light .callout[data-callout="quote"],
+body.theme-light .callout[data-callout="cite"] { --callout-color: 90, 99, 114; }
+body.theme-dark .callout[data-callout="note"] { --callout-color: 161, 176, 199; }
+body.theme-dark .callout[data-callout="abstract"],
+body.theme-dark .callout[data-callout="summary"],
+body.theme-dark .callout[data-callout="tldr"] { --callout-color: 225, 164, 101; }
+body.theme-dark .callout[data-callout="info"] { --callout-color: 150, 170, 235; }
+body.theme-dark .callout[data-callout="todo"] { --callout-color: 116, 205, 182; }
+body.theme-dark .callout[data-callout="tip"],
+body.theme-dark .callout[data-callout="hint"] { --callout-color: 110, 185, 218; }
+body.theme-dark .callout[data-callout="success"],
+body.theme-dark .callout[data-callout="check"],
+body.theme-dark .callout[data-callout="done"] { --callout-color: 180, 206, 145; }
+body.theme-dark .callout[data-callout="question"],
+body.theme-dark .callout[data-callout="help"],
+body.theme-dark .callout[data-callout="faq"] { --callout-color: 181, 163, 210; }
+body.theme-dark .callout[data-callout="warning"],
+body.theme-dark .callout[data-callout="caution"],
+body.theme-dark .callout[data-callout="attention"] { --callout-color: 225, 182, 108; }
+body.theme-dark .callout[data-callout="failure"],
+body.theme-dark .callout[data-callout="fail"],
+body.theme-dark .callout[data-callout="missing"] { --callout-color: 238, 140, 110; }
+body.theme-dark .callout[data-callout="danger"],
+body.theme-dark .callout[data-callout="error"] { --callout-color: 242, 155, 156; }
+body.theme-dark .callout[data-callout="bug"] { --callout-color: 220, 150, 200; }
+body.theme-dark .callout[data-callout="example"] { --callout-color: 159, 180, 204; }
+body.theme-dark .callout[data-callout="quote"],
+body.theme-dark .callout[data-callout="cite"] { --callout-color: 177, 183, 193; }
+
+/* A dotted idea edge also distinguishes tip from information. */
+body .callout[data-callout="tip"] { border-inline-start: 3px dotted rgb(var(--callout-color)); }
+/* Remove the native second indent increment in Reading view. */
+body .markdown-preview-view ol ol > li,
+body .markdown-preview-view ul ul > li { margin-inline-start: 0; }
+body .markdown-preview-view ol ol { padding-inline-start: 1.625em; margin-inline-start: 0; }
+body .markdown-preview-view ul ul { padding-inline-start: 1.125em; margin-inline-start: 0; }
+body .markdown-source-view.mod-cm6 { --indentation-guide-color: var(--frame-line); }
+body .markdown-source-view.mod-cm6 .cm-indent-spacing { box-shadow: inset 1px 0 0 var(--frame-line); }
+/* Six pixels of page colour separate the writing rail from the line. */
+body .markdown-source-view.mod-cm6 .cm-focused .cm-active {
+  box-shadow: -6px 0 0 var(--background-primary), -9px 0 0 var(--frame-accent);
+}
+body.theme-dark .callout[data-callout="scene"] .callout-title { background: #eee9df; color: #211d18; }
+body.theme-dark .callout[data-callout="scene"] :is(.callout-icon,.callout-icon .svg-icon) { color: #211d18; }
+/* A header control owns focus while its input or button is active. */
+body .workspace-leaf-content[data-type="file-explorer"] .nav-header:focus-within ~ .nav-files-container .has-focus { outline: none; box-shadow: none; }
+/* Keep macOS normal button labels on an explicit light surface. */
+body.theme-light { --interactive-normal: #e8e2d3; --interactive-hover: #ddd4c4; }
+body.theme-light .setting-item-control button:not(.mod-cta):not(.clickable-icon) {
+  appearance: none; background-color: var(--interactive-normal); background-image: none; color: var(--text-normal);
+}
+body.theme-light .setting-item-control button:not(.mod-cta):not(.clickable-icon):hover { background-color: var(--interactive-hover); }
+
+body.theme-light {
+  --code-property: #14507a;
+  --code-important: #8a3a10;
+  --code-operator: #57503f;
+  --code-keyword: #8a3a10;
+  --code-string: #315e32;
+  --code-comment: #625943;
+  --code-function: #14507a;
+  --code-tag: #8a3a10;
+  --code-value: #6f4d7c;
+  --code-punctuation: #625943;
+}
+
+body.theme-dark {
+  --code-property: #7cc4f0;
+  --code-important: #ffb08f;
+  --code-operator: #b0a893;
+  --code-keyword: #ffb08f;
+  --code-string: #b2c48a;
+  --code-comment: #b1a48a;
+  --code-function: #7cc4f0;
+  --code-tag: #ffb08f;
+  --code-value: #c6a6dc;
+  --code-punctuation: #b1a48a;
+}

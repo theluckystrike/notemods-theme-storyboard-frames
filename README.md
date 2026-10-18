@@ -70,7 +70,7 @@ The slate has styles for Reading view and Live Preview.
 ## Compatibility
 
 The manifest keeps Obsidian 1.5.0 as the minimum version.
-The G4 evidence uses the Obsidian 1.14.4 desktop renderer.
+Tested with the Obsidian 1.14.4 desktop renderer.
 Reading view and Live Preview are tested in light and dark modes.
 Mobile is not tested.
 Community plugin layouts are not tested.
@@ -110,4 +110,3 @@ Fonts come from the local system. No font or image is loaded from a network.
 ## License
 
 [MIT License](LICENSE). Copyright (c) 2026 NoteMods.
-The original copyright notice is preserved in LICENSE.
