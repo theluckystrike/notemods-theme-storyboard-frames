@@ -1,6 +1,8 @@
 {
   "name": "Storyboard Frames",
-  "author": "Visual Thinking Factory (U19)",
-  "version": "1.0.1",
-  "minAppVersion": "1.5.0"
+  "author": "NoteMods",
+  "version": "1.0.2",
+  "minAppVersion": "1.5.0",
+  "authorUrl": "https://notemods.com/themes/",
+  "fundingUrl": "https://github.com/sponsors/theluckystrike"
 }

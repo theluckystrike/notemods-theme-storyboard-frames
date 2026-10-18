@@ -1,0 +1,998 @@
+{
+  "schemaVersion": 1,
+  "slug": "storyboard-frames",
+  "version": "1.0.2",
+  "producer": "T1",
+  "independentAcceptance": "unknown",
+  "createdAt": "2026-10-18T04:09:01.262047+00:00",
+  "hashes": {
+    "theme.css": "8d5fb127bcc73003e6dd7a70f0e399e5de02992af3d17ca00f2ff33ff18ab0f9",
+    "manifest.json": "4199495fc1260011d2cadc87cf585bb7658dce277fbffe91a3ccccb8f6a5766d",
+    "README.md": "5fcf3bd7fb507721fd8719f3c6fa00667bbe0d41638cb0e18ed9915a1bfee659",
+    "LICENSE": "cab7ad4624f412ff2874b75028453fedcd254159acf837fc9743ce290251754b",
+    "theme.json": "669d037ae623b5954f5d490633b727ef32ba2dae19223c9d4c809deaa996cd7b",
+    "quality.json": "07431f331f9945f89ca23db25d88d59ed260a2c05b63d224c7b19dc2d9aa4463"
+  },
+  "images": {
+    "dark-main-420-preview.jpg": "a77fbe768f7fb1e8b21450f3fed83773cae884e4eee2a5958d489afd818501ce",
+    "light-preview-callouts-one.jpg": "9ec581ae9b786e8f3a7408ab7f1798fb1101597d66080c15c7431db702d6a968",
+    "dark-main-1280-preview.jpg": "d60af6d8751873fd135011a41ce1f5fdc709470f76700d26703db7571f239dcf",
+    "light-main-1280-preview.jpg": "486544c2dfd132aae57994112354420b63be89295d6b22cdc197145b5723c7e5"
+  },
+  "captures": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+  "commands": [
+    {
+      "command": "timeout 120 python3 units/T1/static-check.py storyboard-frames",
+      "exitCode": 0,
+      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/code-gate.json"
+    },
+    {
+      "command": "timeout 60 python3 units/T1/package-check.py storyboard-frames",
+      "exitCode": 0,
+      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/package-gate.json"
+    },
+    {
+      "command": "timeout 900 node units/T1/harness/run.mjs --theme /Users/mike/notemods-theme-submissions-20261014/repos/notemods-theme-storyboard-frames --out /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+      "exitCode": 0,
+      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2/evidence.json"
+    },
+    {
+      "command": "timeout 30 python3 units/T1/assess-evidence.py storyboard-frames /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+      "exitCode": 0,
+      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/computed-evidence-summary.json"
+    }
+  ],
+  "computedContrast": {
+    "light": {
+      "body": {
+        "minimum": 13.972244775076465,
+        "samples": 14
+      },
+      "muted": {
+        "minimum": 6.972854408846735,
+        "samples": 24
+      },
+      "links": {
+        "minimum": 7.444429782998591,
+        "samples": 5
+      },
+      "dividers": {
+        "minimum": 5.54670593994496,
+        "samples": 4
+      },
+      "tableBorders": {
+        "minimum": 3.5164725537709374,
+        "samples": 4
+      },
+      "calloutText": {
+        "minimum": 13.10912033716171,
+        "samples": 56
+      },
+      "nativeTab": {
+        "presses": 44,
+        "distinctElements": 27,
+        "indicatorsPresent": 44
+      },
+      "focusCoverage": {
+        "focusedControls": 46,
+        "minimum": 4.980962010582275,
+        "states": [
+          "reading",
+          "search",
+          "explorer",
+          "palette",
+          "editor",
+          "settings"
+        ]
+      },
+      "selectedSettingsText": {
+        "minimum": 5.694205800396291,
+        "samples": 1
+      },
+      "themeSelection": {
+        "control": {
+          "value": "Storyboard Frames",
+          "options": [
+            {
+              "text": "Default",
+              "value": ""
+            },
+            {
+              "text": "Storyboard Frames",
+              "value": "Storyboard Frames"
+            }
+          ]
+        },
+        "default": {
+          "controlValue": "Storyboard Frames",
+          "selectedTheme": "Storyboard Frames"
+        },
+        "theme": {
+          "controlValue": "Storyboard Frames",
+          "selectedTheme": "Storyboard Frames"
+        },
+        "nativeChanged": false,
+        "handler": {
+          "method": "Set the visible select value and dispatch its change event. This tests the Settings UI handler, not native option selection.",
+          "default": {
+            "controlValue": "",
+            "selectedTheme": ""
+          },
+          "theme": {
+            "controlValue": "Storyboard Frames",
+            "selectedTheme": "Storyboard Frames"
+          }
+        }
+      },
+      "editorCaret": {
+        "minimum": 5.54670593994496,
+        "samples": 1,
+        "details": {
+          "kind": "native caret",
+          "focused": true,
+          "documentFocused": true,
+          "visible": true,
+          "editorOutline": "none",
+          "contentOutline": "none",
+          "borderWidth": "native",
+          "selectionRect": {
+            "x": 270.5,
+            "y": 195.828125,
+            "width": 0,
+            "height": 18
+          },
+          "sample": {
+            "measured": true,
+            "element": {
+              "tag": "DIV",
+              "id": "",
+              "class": "cm-content cm-lineWrapping",
+              "role": "textbox",
+              "label": "Theme Evidence Fixture v4G4-FIXTURE-V4 proves that this note is open. Body text with bold,",
+              "tabIndex": null,
+              "rect": {
+                "x": 270.5,
+                "y": 110.1875,
+                "width": 768,
+                "height": 4624.875
+              },
+              "visible": true
+            },
+            "property": "caretColor",
+            "raw": "rgb(168, 59, 18)",
+            "cssOpacity": "1",
+            "ancestorOpacity": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "foreground": [
+              168,
+              59,
+              18,
+              1
+            ],
+            "background": [
+              243,
+              239,
+              230,
+              1
+            ],
+            "ratio": 5.54670593994496,
+            "method": "sRGB relative luminance; CSS alpha, ancestor backgrounds, and group opacity are composited; gradients and background images are not sampled",
+            "backgroundImage": "none",
+            "borderTopWidth": "0px",
+            "borderBottomWidth": "0px",
+            "borderTopStyle": "none",
+            "borderBottomStyle": "none"
+          }
+        }
+      },
+      "reducedMotion": {
+        "main": {
+          "mode": "light",
+          "reduced": true,
+          "scope": "Rendered controls, including controls outside the scroll viewport. Empty zero-area cursor layers are recorded separately.",
+          "samples": [
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SPAN",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SPAN",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon view-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon view-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            }
+          ],
+          "unpaintedLayers": [
+            {
+              "class": "cm-layer cm-layer-above cm-cursorLayer",
+              "width": 0,
+              "height": 0,
+              "children": 0,
+              "paintedChildren": 0,
+              "animationDuration": "1.2s",
+              "animationName": "cm-blink",
+              "inlineStyle": "z-index: 150; animation-duration: 1200ms; animation-name: cm-blink;"
+            }
+          ]
+        },
+        "settings": {
+          "mode": "light",
+          "reduced": true,
+          "scope": "Rendered controls, including controls outside the scroll viewport. Empty zero-area cursor layers are recorded separately.",
+          "samples": [
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SELECT",
+              "class": "dropdown",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SELECT",
+              "class": "dropdown",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "slider",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": "::after",
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": "::after",
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            }
+          ],
+          "unpaintedLayers": []
+        }
+      },
+      "accentCustomization": {
+        "method": "Visible Accent color input events and its reset control",
+        "before": {
+          "control": true,
+          "value": "#a53a12",
+          "background": "rgb(165, 58, 18)"
+        },
+        "chosen": "#315d7e",
+        "changed": "rgb(49, 92, 125)",
+        "reset": {
+          "found": true,
+          "class": "clickable-icon extra-setting-button"
+        },
+        "restored": "rgb(165, 58, 18)",
+        "uiChanged": true,
+        "restoredDefault": true
+      },
+      "calloutTitles": {
+        "minimum": 13.972244775076465,
+        "samples": 65
+      },
+      "commandSelection": {
+        "minimum": 5.694205800396291,
+        "samples": 1
+      },
+      "codeSyntax": {
+        "minimum": 4.908688628504434,
+        "samples": 65
+      },
+      "tableBorderAdjacent": {
+        "minimum": 3.5164725537709374,
+        "samples": 84
+      },
+      "navigationText": {
+        "minimum": 5.649855512848219,
+        "samples": 3
+      },
+      "authoredLists": {
+        "theme": "Storyboard Frames",
+        "file": "Authored starts.md",
+        "lists": [
+          {
+            "start": 7,
+            "style": "decimal-leading-zero",
+            "items": [
+              "\nSeventh shot\n",
+              "\nEighth shot\n\nNested third shot\nNested fourth shot\n\n"
+            ]
+          },
+          {
+            "start": 3,
+            "style": "decimal-leading-zero",
+            "items": [
+              "Nested third shot",
+              "Nested fourth shot"
+            ]
+          }
+        ]
+      }
+    },
+    "dark": {
+      "body": {
+        "minimum": 13.246252601548798,
+        "samples": 14
+      },
+      "muted": {
+        "minimum": 7.100828152258294,
+        "samples": 24
+      },
+      "links": {
+        "minimum": 8.816587109010259,
+        "samples": 5
+      },
+      "dividers": {
+        "minimum": 7.5047402787670565,
+        "samples": 4
+      },
+      "tableBorders": {
+        "minimum": 3.7509244837281077,
+        "samples": 4
+      },
+      "calloutText": {
+        "minimum": 12.418331270070453,
+        "samples": 56
+      },
+      "nativeTab": {
+        "presses": 44,
+        "distinctElements": 27,
+        "indicatorsPresent": 44
+      },
+      "focusCoverage": {
+        "focusedControls": 46,
+        "minimum": 6.7061252513528835,
+        "states": [
+          "reading",
+          "search",
+          "explorer",
+          "palette",
+          "editor",
+          "settings"
+        ]
+      },
+      "selectedSettingsText": {
+        "minimum": 7.787048214852575,
+        "samples": 1
+      },
+      "themeSelection": {
+        "control": {
+          "value": "Storyboard Frames",
+          "options": [
+            {
+              "text": "Default",
+              "value": ""
+            },
+            {
+              "text": "Storyboard Frames",
+              "value": "Storyboard Frames"
+            }
+          ]
+        },
+        "default": {
+          "controlValue": "Storyboard Frames",
+          "selectedTheme": "Storyboard Frames"
+        },
+        "theme": {
+          "controlValue": "Storyboard Frames",
+          "selectedTheme": "Storyboard Frames"
+        },
+        "nativeChanged": false,
+        "handler": {
+          "method": "Set the visible select value and dispatch its change event. This tests the Settings UI handler, not native option selection.",
+          "default": {
+            "controlValue": "",
+            "selectedTheme": ""
+          },
+          "theme": {
+            "controlValue": "Storyboard Frames",
+            "selectedTheme": "Storyboard Frames"
+          }
+        }
+      },
+      "editorCaret": {
+        "minimum": 7.5047402787670565,
+        "samples": 1,
+        "details": {
+          "kind": "native caret",
+          "focused": true,
+          "documentFocused": true,
+          "visible": true,
+          "editorOutline": "none",
+          "contentOutline": "none",
+          "borderWidth": "native",
+          "selectionRect": {
+            "x": 270.5,
+            "y": 195.828125,
+            "width": 0,
+            "height": 18
+          },
+          "sample": {
+            "measured": true,
+            "element": {
+              "tag": "DIV",
+              "id": "",
+              "class": "cm-content cm-lineWrapping",
+              "role": "textbox",
+              "label": "Theme Evidence Fixture v4G4-FIXTURE-V4 proves that this note is open. Body text with bold,",
+              "tabIndex": null,
+              "rect": {
+                "x": 270.5,
+                "y": 110.1875,
+                "width": 768,
+                "height": 4624.875
+              },
+              "visible": true
+            },
+            "property": "caretColor",
+            "raw": "rgb(255, 143, 102)",
+            "cssOpacity": "1",
+            "ancestorOpacity": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "foreground": [
+              255,
+              143,
+              102,
+              1
+            ],
+            "background": [
+              31,
+              29,
+              26,
+              1
+            ],
+            "ratio": 7.5047402787670565,
+            "method": "sRGB relative luminance; CSS alpha, ancestor backgrounds, and group opacity are composited; gradients and background images are not sampled",
+            "backgroundImage": "none",
+            "borderTopWidth": "0px",
+            "borderBottomWidth": "0px",
+            "borderTopStyle": "none",
+            "borderBottomStyle": "none"
+          }
+        }
+      },
+      "reducedMotion": {
+        "main": {
+          "mode": "dark",
+          "reduced": true,
+          "scope": "Rendered controls, including controls outside the scroll viewport. Empty zero-area cursor layers are recorded separately.",
+          "samples": [
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon side-dock-ribbon-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SPAN",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SPAN",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon view-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "clickable-icon view-action",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            }
+          ],
+          "unpaintedLayers": [
+            {
+              "class": "cm-layer cm-layer-above cm-cursorLayer",
+              "width": 0,
+              "height": 0,
+              "children": 0,
+              "paintedChildren": 0,
+              "animationDuration": "1.2s",
+              "animationName": "cm-blink2",
+              "inlineStyle": "z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"
+            }
+          ]
+        },
+        "settings": {
+          "mode": "dark",
+          "reduced": true,
+          "scope": "Rendered controls, including controls outside the scroll viewport. Empty zero-area cursor layers are recorded separately.",
+          "samples": [
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SELECT",
+              "class": "dropdown",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "SELECT",
+              "class": "dropdown",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "DIV",
+              "class": "clickable-icon extra-setting-button",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "slider",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": "::after",
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "BUTTON",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "LABEL",
+              "class": "checkbox-container",
+              "pseudo": "::after",
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            },
+            {
+              "tag": "INPUT",
+              "class": "",
+              "pseudo": null,
+              "transitionDuration": "0s",
+              "animationDuration": "0s"
+            }
+          ],
+          "unpaintedLayers": []
+        }
+      },
+      "accentCustomization": {
+        "method": "Visible Accent color input events and its reset control",
+        "before": {
+          "control": true,
+          "value": "#ff8c66",
+          "background": "rgb(255, 140, 102)"
+        },
+        "chosen": "#98c2db",
+        "changed": "rgb(153, 195, 219)",
+        "reset": {
+          "found": true,
+          "class": "clickable-icon extra-setting-button"
+        },
+        "restored": "rgb(255, 140, 102)",
+        "uiChanged": true,
+        "restoredDefault": true
+      },
+      "calloutTitles": {
+        "minimum": 13.246252601548798,
+        "samples": 65
+      },
+      "commandSelection": {
+        "minimum": 7.787048214852575,
+        "samples": 1
+      },
+      "codeSyntax": {
+        "minimum": 6.114960253299227,
+        "samples": 65
+      },
+      "tableBorderAdjacent": {
+        "minimum": 3.7509244837281077,
+        "samples": 84
+      },
+      "navigationText": {
+        "minimum": 6.275811776455626,
+        "samples": 3
+      },
+      "authoredLists": {
+        "theme": "Storyboard Frames",
+        "file": "Authored starts.md",
+        "lists": [
+          {
+            "start": 7,
+            "style": "decimal-leading-zero",
+            "items": [
+              "\nSeventh shot\n",
+              "\nEighth shot\n\nNested third shot\nNested fourth shot\n\n"
+            ]
+          },
+          {
+            "start": 3,
+            "style": "decimal-leading-zero",
+            "items": [
+              "Nested third shot",
+              "Nested fourth shot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Startup before CDP attach is unknown.",
+    "Programmatic focus does not prove keyboard reachability.",
+    "Gradients and background image pixels are not sampled.",
+    "Mobile and assistive technology are not tested.",
+    "Main-process updater requests are outside CDP coverage."
+  ]
+}
