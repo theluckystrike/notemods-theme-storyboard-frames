@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "producer": "T1",
   "independentAcceptance": "unknown",
-  "createdAt": "2026-10-18T04:09:01.262047+00:00",
+  "createdAt": "2026-10-18T04:18:22.664247+00:00",
   "hashes": {
     "theme.css": "8d5fb127bcc73003e6dd7a70f0e399e5de02992af3d17ca00f2ff33ff18ab0f9",
     "manifest.json": "4199495fc1260011d2cadc87cf585bb7658dce277fbffe91a3ccccb8f6a5766d",
@@ -19,7 +19,7 @@
     "dark-main-1280-preview.jpg": "d60af6d8751873fd135011a41ce1f5fdc709470f76700d26703db7571f239dcf",
     "light-main-1280-preview.jpg": "486544c2dfd132aae57994112354420b63be89295d6b22cdc197145b5723c7e5"
   },
-  "captures": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+  "captures": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2-final",
   "commands": [
     {
       "command": "timeout 120 python3 units/T1/static-check.py storyboard-frames",
@@ -32,12 +32,12 @@
       "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/package-gate.json"
     },
     {
-      "command": "timeout 900 node units/T1/harness/run.mjs --theme /Users/mike/notemods-theme-submissions-20261014/repos/notemods-theme-storyboard-frames --out /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+      "command": "timeout 900 node units/T1/harness/run.mjs --theme /Users/mike/notemods-theme-submissions-20261014/repos/notemods-theme-storyboard-frames --out /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2-final",
       "exitCode": 0,
-      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2/evidence.json"
+      "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2-final/evidence.json"
     },
     {
-      "command": "timeout 30 python3 units/T1/assess-evidence.py storyboard-frames /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2",
+      "command": "timeout 30 python3 units/T1/assess-evidence.py storyboard-frames /Users/mike/notemods-g4-work/units/T1/storyboard-frames/captures-a2-final",
       "exitCode": 0,
       "evidence": "/Users/mike/notemods-g4-work/units/T1/storyboard-frames/computed-evidence-summary.json"
     }
