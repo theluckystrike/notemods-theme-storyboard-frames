@@ -193,7 +193,7 @@
 .markdown-embed-title { font-family: var(--font-interface-theme); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
 
 /* ---------- links ---------- */
-a.internal-link { color: var(--link-color); text-decoration: underline; text-underline-offset: 0.15em; }
+a.internal-link { color: var(--link-color); text-decoration-line: underline; text-underline-offset: 0.15em; }
 a.internal-link:hover { color: var(--link-color-hover); }
 a.external-link { color: var(--link-external-color); }
 .is-unresolved, a.is-unresolved { color: var(--link-unresolved-color); font-weight: 600; opacity: 1; }
@@ -218,7 +218,7 @@ a.external-link { color: var(--link-external-color); }
 }
 .markdown-rendered input[type="checkbox"]:checked { background: var(--interactive-accent); }
 .markdown-rendered .task-list-item { list-style: none; }
-.markdown-rendered .task-list-item.is-checked { color: var(--text-faint); text-decoration: none; }
+.markdown-rendered .task-list-item.is-checked { color: var(--text-faint); text-decoration-line: none; }
 
 /* ---------- tables ---------- */
 .markdown-rendered table { border-collapse: collapse; width: 100%; font-size: var(--table-text-size); line-height: var(--table-line-height); }
@@ -350,7 +350,7 @@ body :is(.markdown-rendered h2, .markdown-source-view .HyperMD-header-2) {
 body :is(.markdown-rendered h6, .HyperMD-header-6) { font-style: italic; }
 body .markdown-rendered :is(a.internal-link, a.external-link),
 body .cm-s-obsidian :is(.cm-link, .cm-url, .cm-hmd-internal-link) {
-  text-decoration: underline;
+  text-decoration-line: underline;
   text-underline-offset: 0.15em;
 }
 body .markdown-rendered a.is-unresolved { opacity: 1; font-weight: 600; }
@@ -595,14 +595,12 @@ body .markdown-source-view.mod-cm6 .image-embed img {
   display: block; box-sizing: border-box; margin-inline: auto; border: 1px solid var(--frame-line);
   border-radius: var(--radius-m); box-shadow: 0 3px 10px rgba(33,29,24,0.12);
 }
-body .markdown-source-view.mod-cm6 .cm-embed-block:has(.image-embed) { width: 100%; }
+body .markdown-source-view.mod-cm6 .image-embed { width: 100%; }
 body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout) { border-inline-end: 1px solid var(--frame-line); }
 body .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-quote) + .HyperMD-quote:not(.HyperMD-callout) {
   border-top: 1px solid var(--frame-line); border-start-start-radius: var(--radius-m); border-start-end-radius: var(--radius-m);
 }
-body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout):has(+ .cm-line:not(.HyperMD-quote)) {
-  border-bottom: 1px solid var(--frame-line); border-end-start-radius: var(--radius-m); border-end-end-radius: var(--radius-m);
-}
+body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout) { padding-inline-end: 0.75em; }
 body .markdown-source-view.mod-cm6 :is(.cm-formatting-list-ol,.list-bullet) { color: var(--frame-accent); }
 body :is(.markdown-rendered,.markdown-source-view.mod-cm6) .list-bullet::after { background-color: var(--frame-accent); }
 body .setting-item.setting-item-heading { border-top: 0; }
@@ -624,7 +622,7 @@ body .markdown-preview-view.markdown-rendered :is(li,.task-list-item) .list-bull
 body .markdown-source-view.mod-cm6 .cm-content .list-bullet::after { background-color: var(--frame-accent); }
 body .markdown-source-view.mod-cm6 .cm-content :is(.cm-formatting-list-ol,.list-number) { color: var(--frame-accent); }
 /* Authored scene identifiers form a stable production slate. */
-body .callout[data-callout="scene"] { --callout-icon: clapperboard; border: 2px solid var(--frame-line); }
+body .callout[data-callout="scene"] { --callout-icon: lucide-clapperboard; border: 2px solid var(--frame-line); }
 body .callout[data-callout="scene"] .callout-title {
   position: relative; padding-top: 0.95em;
   background: #211d18; color: #f3efe6;
@@ -635,3 +633,54 @@ body .callout[data-callout="scene"] .callout-title::before {
   background: repeating-linear-gradient(135deg,#211d18 0 8px,#f3efe6 8px 16px);
 }
 body .callout[data-callout="scene"] :is(.callout-icon,.callout-icon .svg-icon) { color: #f3efe6; }
+
+/* Keep the rendered editor table as wide as the text column. */
+body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget,
+body .markdown-source-view.mod-cm6 .cm-table-widget .table-editor { width: 100%; max-width: 100%; }
+body.theme-light .callout[data-callout="tip"] { --callout-color: 20, 100, 130; }
+body.theme-light .callout[data-callout="success"] { --callout-color: 70, 100, 35; }
+body.theme-dark .callout[data-callout="tip"] { --callout-color: 110, 185, 218; }
+body .markdown-source-view.mod-cm6 .cm-focused .cm-active { box-shadow: -3px 0 0 var(--frame-accent); }
+body .markdown-source-view.mod-cm6 .cm-content { caret-color: var(--caret-color); }
+body .search-result-file-matched-text { font-weight: 700; text-decoration-line: underline; }
+
+/* Use the native editor indent measurement without changing line fonts. */
+body .markdown-source-view.mod-cm6 { --list-indent: 2.25em; }
+
+/* Type edges retain a cue when neighbouring semantic hues look similar. */
+body .callout[data-callout="failure"] { border-inline-start-style: dashed; border-inline-start-width: 3px; }
+body .callout[data-callout="bug"] { border-inline-start-style: double; border-inline-start-width: 4px; }
+
+/* Tables share the note column width in Reading and Live Preview. */
+body .markdown-preview-view .table-wrapper,
+body .markdown-preview-view table,
+body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget,
+body .markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
+body .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+body .markdown-source-view.mod-cm6 .cm-table-widget table { width: 100%; }
+
+/* The native cursor layer is outside the generic editor class in current Obsidian. */
+@media (prefers-reduced-motion: reduce) {
+  body .markdown-source-view.mod-cm6 .cm-scroller .cm-layer.cm-cursorLayer {
+    animation-name: none; animation-duration: 0s; animation-iteration-count: 1;
+  }
+}
+
+/* The last quote line needs a sibling test to close one continuous card. */
+body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout):has(+ .cm-line:not(.HyperMD-quote)) {
+  border-bottom: 1px solid var(--frame-line);
+  border-end-start-radius: var(--radius-m); border-end-end-radius: var(--radius-m);
+}
+
+/* Native table padding and negative margins need an automatic outer width. */
+body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget { width: auto; }
+body .markdown-rendered table { width: 100%; }
+/* Widen authored spaces without changing the editor font metrics. */
+body .markdown-source-view.mod-cm6 .cm-hmd-list-indent { word-spacing: 0.25em; }
+body .extra-setting-button:focus { outline: 2px solid var(--background-modifier-border-focus); outline-offset: 2px; opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  body .markdown-source-view.mod-cm6 .cm-scroller .cm-layer.cm-cursorLayer { animation-play-state: paused; }
+}
+
+/* Native drag-handle padding extends outside the text column. */
+body .markdown-source-view.mod-cm6 .cm-embed-block.cm-table-widget { max-width: none; }

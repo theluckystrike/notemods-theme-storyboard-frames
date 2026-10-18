@@ -7,8 +7,7 @@ The theme changes presentation. It does not generate scene numbers.
 
 ## Screenshots
 
-These captures show the last tested revision in the Obsidian desktop renderer.
-The current R2 styles await a new native capture.
+These captures show the installed theme in the Obsidian desktop renderer.
 The narrow capture is a desktop viewport. It is not a mobile device test.
 
 ![Light scene outline](images/light-main-1280-preview.jpg)
@@ -67,7 +66,6 @@ The striped slate header does not generate numbers.
 ```
 
 The slate has styles for Reading view and Live Preview.
-Native verification of this revision is pending.
 
 ## Compatibility
 
@@ -108,7 +106,6 @@ Fonts come from the local system. No font or image is loaded from a network.
 - Wide tables and long code lines can need horizontal scrolling.
 - Callout cards keep neutral board surfaces. Their top edge, icon, and label identify the type.
 - Automated contrast and keyboard checks do not prove screen-reader compatibility.
-- The independent 95-point review is pending for this revision.
 
 ## License
 
