@@ -7,7 +7,8 @@
     "H2 corner frames and semantic shot-card top edges",
     "Native leading-zero ordered lists that preserve authored starts",
     "Dashed cut lines, framed embeds, and full-grid tables",
-    "Rounded control frames with a native writing caret"
+    "Rounded control frames with a native writing caret",
+    "Authored scene slates with stable scene and shot identifiers and a clapperboard strip"
   ],
   "modes": [
     "light",

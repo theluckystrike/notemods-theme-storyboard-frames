@@ -10,7 +10,7 @@
   "accepted": false,
   "directoryApprovalClaimed": false,
   "majorDefects": [],
-  "note": "This revision repairs historical review defects and the G4 A2 issues. Independent review of the current hashes is required. No producer score is claimed.",
+  "note": "This revision repairs the independent G4 review defects. Current-hash independent review is required.",
   "historicalReviewVersion": "1.0.0",
   "historicalScore": 77,
   "currentArtifactsIndependentlyReviewed": false,

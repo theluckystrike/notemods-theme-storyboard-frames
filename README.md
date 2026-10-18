@@ -7,7 +7,8 @@ The theme changes presentation. It does not generate scene numbers.
 
 ## Screenshots
 
-These captures show the installed theme in the Obsidian desktop renderer.
+These captures show the last tested revision in the Obsidian desktop renderer.
+The current R2 styles await a new native capture.
 The narrow capture is a desktop viewport. It is not a mobile device test.
 
 ![Light scene outline](images/light-main-1280-preview.jpg)
@@ -53,6 +54,21 @@ Quotes use an accent edge. Tags use compact labels.
 Links have underlines. Unresolved links also use a heavier weight.
 Horizontal rules use a dashed cut line.
 
+## Authored scene slates
+
+Use a `scene` callout for a scene and shot record.
+Type the scene and shot identifiers in the title. They stay in your note.
+The striped slate header does not generate numbers.
+
+```markdown
+> [!scene] SCENE 07 / SHOT 03
+> **EXT. PLATFORM - DAWN**
+> Camera: locked off. Lens: 50 mm. Take: 02.
+```
+
+The slate has styles for Reading view and Live Preview.
+Native verification of this revision is pending.
+
 ## Compatibility
 
 The manifest keeps Obsidian 1.5.0 as the minimum version.
@@ -74,6 +90,8 @@ Add a CSS snippet in your vault to change the frame size and spacing:
 ```
 
 Use the Obsidian Accent color setting for selected settings rows, checked controls, and sliders.
+The theme bounds accent lightness to keep white labels readable in light mode and dark labels readable in dark mode.
+The selected hue remains visible.
 Set `--frame-accent` in each mode to change frame edges and list markers.
 Set `--frame-card` to change card surfaces.
 Set `--frame-line` to change structural borders.
@@ -94,5 +112,5 @@ Fonts come from the local system. No font or image is loaded from a network.
 
 ## License
 
-[MIT License](LICENSE). Original copyright: Visual Thinking Factory (U19), 2026.
-NoteMods maintains this theme.
+[MIT License](LICENSE). Copyright (c) 2026 NoteMods.
+The original copyright notice is preserved in LICENSE.
